@@ -2,15 +2,15 @@
 
 ## Table of Contents
 - [Overview](#overview)
-* [The Challenge](#challenge)
-* [Solution](#solution)
+ * [The Challenge](#challenge)
+ * [Solution](#solution)
 - [Usage Guide](#usage)
-* [Prerequisites](#prerequisites)
-* [Compatibility](#compatibility)
-* [Create card details web page](#web)
-* [iOS](#ios)
-* [Android](#android)
-* [Build and Run](#build-run)
+ * [Prerequisites](#prerequisites)
+ * [Compatibility](#compatibility)
+ * [Create card details web page](#web)
+ * [iOS](#ios)
+ * [Android](#android)
+ * [Build and Run](#build-run)
 
 
 
@@ -32,13 +32,13 @@ We can use browser's this feature in our iOS and Android native apps and can sto
 ## Usage Guide<a name="usage"></a>
 
 ### Prerequisites <a name="prerequisites"></a>:
-1. Secure server
-2. XCode
-3. Android Studio
+ * Secure server
+ * XCode
+ * Android Studio
 
 ### Compatibility <a name="compatibility"></a>
-iOS 12.0 onwards
-Android 10.0 onwards
+ * iOS 12.0 onwards
+ * Android 10.0 onwards
 
 
 ### 1. Create card details web page <a name="web"></a>:
@@ -49,9 +49,9 @@ we need to set up secure web page with the form which has prefilled card details
 When we submit the card details form, browser will intercept the request and asks user to save the card in browser's autofill storage.
 
 #### Structure:
-**card.html & main.css** : Contains card input fields and style
-**autofill.js** : Contains script which fill the form with card details and provides functions to copy the card number.
-**images** : Card type logos
+ * **card.html & main.css** : Contains card input fields and style
+ * **autofill.js** : Contains script which fill the form with card details and provides functions to copy the card number.
+ * **images** : Card type logos
 
 #### card.html
 ```html
