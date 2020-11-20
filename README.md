@@ -2,15 +2,15 @@
 
 ## Table of Contents
 - [Overview](#overview)
- * [The Challenge](#challenge)
- * [Solution](#solution)
+  * [The Challenge](#challenge)
+  * [Solution](#solution)
 - [Usage Guide](#usage)
- * [Prerequisites](#prerequisites)
- * [Compatibility](#compatibility)
- * [Create card details web page](#web)
- * [iOS](#ios)
- * [Android](#android)
- * [Build and Run](#build-run)
+  * [Prerequisites](#prerequisites)
+  * [Compatibility](#compatibility)
+  * [Create card details web page](#web)
+  * [iOS](#ios)
+  * [Android](#android)
+  * [Build and Run](#build-run)
 
 
 
