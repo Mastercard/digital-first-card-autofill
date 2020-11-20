@@ -1,0 +1,5 @@
+<resources>
+    <string name="default_url">Put_Card_HTML_Page_URL</string>
+    <string name="app_name">Issuer App</string>
+    <string name="chrome_tab_not_avaliable">Chrome Tabs not available on this device.</string>
+</resources>

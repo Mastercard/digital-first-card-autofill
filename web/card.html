@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    <script src="static/js/autofill.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <!-- Call JS to fill up card details -->
+    <script>
+        window.onload = function () { fillUpForm(); };
+    </script>
+</head>
+
+<body>
+
+    <form id="form1" autocomplete="on">
+        <div style="margin-top:120px;">
+            <div name="cardDetails" class="overlay-container cardBackground align-items-center">
+                <div class="row justify-content-start">
+                    <div class="col">
+                        <input class="cardFields cardNumberField" name="cc-number" id="cc-number"
+                            autocomplete="cc-number">
+                    </div>
+                </div>
+                <div class="row justify-content-start no-gutters">
+                    <div class="col-4">
+                        <div class="row justify-content-start no-gutters">
+                            <label class="cardFieldLabel">Expiry</label>
+                        </div>
+                        <div class="row justify-content-start no-gutters">
+                            <input class="col-3 cardFields cardExpFieldMonth" name="cc-exp-month" id="cc-exp-month"
+                                autocomplete="cc-exp-month">
+                            <input class="col-5 cardFields cardExpFieldYear" name="cc-exp-year" id="cc-exp-year"
+                                autocomplete="cc-exp-year">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="row justify-content-start no-gutters">
+                            <label class="cardFieldLabel">CVC</label>
+                        </div>
+                        <div class="row justify-content-start no-gutters">
+                            <input class="cardFields" name="cc-csc" id="cc-csc" autocomplete="cc-csc">
+                        </div>
+                    </div>
+                </div>
+                <img class="cardLogo" id="cardLogo" src="static/images/Mastercard.png">
+                <!-- overlay div to disable user interaction -->
+                <div name="transparent-overlay" class="overlay-child"></div>
+            </div>
+            <div style="margin-top:40px; display: block; margin-left: auto; margin-right: auto; width: 300px">
+                <input class="btn btn-primary btn-block" type="submit" value="Save" onclick="save()">
+                <input class="btn btn-secondary btn-block" type="button" value="Copy Card Number"
+                    onclick="copyCNumber()">
+                <div class="toast">
+                    <div class="toast-body">
+                        Copied!
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</body>
+
+</html>
