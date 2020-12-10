@@ -17,16 +17,16 @@
 ## Overview <a name="overview"></a>
 
 ### The Challenge <a name="challenge"></a>
-Today consumers that have a digital card in their mobile banking app on a mobile device and want to use it for eCommerce on the same device are forced to go through a sub-optimal User Experience. They have to swap multiple times between the mobile banking app where they read card details and the merchant website or app where they manually tap them in.
+Today, consumers who have a digital card in their mobile banking app on a mobile device and want to use it for eCommerce on that same device are forced to go through a sub-optimal User Experience. They have to swap multiple times between the mobile banking app where they read card details and the merchant website or app where they manually enter them in.
 
 ### Solution <a name="solution"></a>
-Solution to the above issue is, if user store the card details in browser autofill, After that whenever they go to checkout page on any merchant site, browser will offer to autofill the card details. This step still requires manual entry of the card details to browser autofill settings and to perform that user need to switch multiple times between issuer app and browser settings. To avoid that we need some way by which we can directly store the card details to browser's autofill storage. Unfortunately there is no open api available in iOS & Android by which we can store the card details directly in browser's autofill storage.
+The solution to the above issue is, if user store the card details in browser autofill, after that whenever they go to a guest checkout page on any merchant site, their browser will offer to autofill their card details. This step still requires manual entry of the card details to browser autofill settings and to perform that user need to switch multiple times between issuer app and browser settings. To avoid that we need some way by which we can directly store the card details to browser's autofill storage. Unfortunately there is no open API available in iOS & Android by which we can store the card details directly in browser's autofill storage.
 
-This is a reference code to demonstrate how HTML page can be used in native apps to store the card details in mobile browser autofill. 
+This is a reference code to demonstrate how HTML page can be used in native apps to store the card details in a mobile browser autofill. 
 
-Every time when we perform checkout on merchant website, browser identifies the card details and offers to save the card details. If we hit save on the pop up, this card details will get saved into browser's autofill storage and then after every time whenever we will perform checkout, browser will offer to autofill the saved card details into checkout form.
+Every time when we perform a guest checkout on merchant website, the browser identifies the card details and offers to save the card details. If we hit 'Save' on the pop up, the card details will get saved into browser's autofill storage and then after every time whenever we will perform checkout, the browser will offer to autofill the card details into the checkout form.
 
-We can use browser's this feature in our iOS and Android native apps and can store card details directly from native apps to browser's autofill storage.
+We can use the browser's feature in our iOS and Android native apps and can store card details directly from native apps to any browser's autofill storage.
 
 
 ## Usage Guide<a name="usage"></a>
